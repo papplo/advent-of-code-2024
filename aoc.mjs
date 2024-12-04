@@ -1,8 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { primi, deuce } from './01/main.mjs';
-import { Cipher } from 'crypto';
+import { primi, deuce } from './02/main.mjs';
 
 const main = () => {
     const args = process.argv.slice(2);
@@ -16,8 +15,7 @@ const main = () => {
    
     let output;
     if (version == 1) {
-    output = primi(criteria)
-      console.log('asdsdasdasd')
+      output = primi(criteria)
     } else {
       output = deuce(criteria)
     }
